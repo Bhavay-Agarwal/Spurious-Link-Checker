@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Form Input Wave</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>
+          URL<img class="url" src="images/5622-removebg-preview.png" />MAN
+        </h1>
+      </div>
+
+      <form id="urlForm" action="">
+        <div class="form-control">
+          <input type="text" name="url" required />
+          <label>URL</label>
+        </div>
+
+        <div class="select-box">
+          <label for="select-box"> </label>
+          <select id="select-box" name="selectBox">
+            <option value="" disabled selected>Select your option</option>
+            <option value="quick">Quick Scan</option>
+            <option value="moderate">Moderate Scan</option>
+            <option value="deep">Deep Scan</option>
+          </select>
+        </div>
+
+        <!-- <div class="output">
+          <div id="searchingElement" class="searching"></div>
+          <div id="successElement" class="success"></div>
+          <div id="errorElement" class="error"></div>
+        </div> -->
+
+        <button name="submit" class="btn">Detect</button>
+      </form>
+    </div>
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
